@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "code_related/usersCode/rrr/question1/code.py", line 1, in <module>
+    import temp
+  File "/home/suyash/Coding/DEV/projects/NCC-2021-API/code_related/usersCode/rrr/question1/temp.py", line 1, in <module>
+    from seccomp import *
+ModuleNotFoundError: No module named 'seccomp'

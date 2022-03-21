@@ -3,6 +3,7 @@ import datetime
 from tokenize import Token
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 
 from rest_framework import permissions, generics
 from rest_framework.authentication import BasicAuthentication
@@ -10,7 +11,7 @@ from rest_framework.authtoken.serializers import AuthTokenSerializer
 from knox.views import LoginView as KnoxLoginView
 from rest_framework import permissions
 from rest_framework.decorators import api_view
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 
 from knox.models import AuthToken
@@ -29,7 +30,7 @@ start_time = 0
 end_time = 0
 duration = 0
 flag = False
-start = datetime.datetime(2021, 1, 1, 0, 0)
+start = datetime.datetime(2022, 3, 11, 0, 0, 0)
 
 class RegisterAPI(generics.GenericAPIView):
     serializer_class = AccountSerializer

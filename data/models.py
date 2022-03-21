@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
 from django.db import models
-import jwt
+
 # Create your models here.
 from django.conf import settings
 from django.db.models.signals import post_save
